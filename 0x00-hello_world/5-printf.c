@@ -2,7 +2,7 @@
 /**
  * main - Prints "with proper grammar, but the outcome is a piece of art," 
  * followed newline
- * Return:0 Always.
+ * Return:0 Always
  */
 int main(void)
 { 
