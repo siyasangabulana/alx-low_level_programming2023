@@ -1,11 +1,15 @@
 #include <stdio.h>
 
-int main(void) {
+/*It prints the lowecase alphabet in reverse
+ *
+ */
+
+int main(void) 
+{
 char letter;
 
 for (letter = 'z'; letter >= 'a'; letter--) 
 {
-
 putchar(letter);
 }
 
