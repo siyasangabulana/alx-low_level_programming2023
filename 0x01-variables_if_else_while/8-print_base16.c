@@ -12,14 +12,15 @@
  */
 int main(void)
 {
-char letter;
+int digit;
 
-for (letter = 'z'; letter >= 'a'; letter--)
-{
-putchar(letter);
-}
+for (digit = 0; digit < 10; digit++)
+putchar(digit + '0');
+
+for (digit = 0; digit < 6; digit++)
+putchar(digit + 'a');
 
 putchar('\n');
 
-return (0);
+return 0;
 }
