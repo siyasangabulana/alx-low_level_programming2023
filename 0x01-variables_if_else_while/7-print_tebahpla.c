@@ -6,7 +6,6 @@
  * It prints the lowercase alphabet in reverse, followed by a new line.
  * Only the putchar function is allowed.
  * All the code is in the main function.
- * putchar is used only twice.
  *
  * Return: Always 0 (Success)
  */
