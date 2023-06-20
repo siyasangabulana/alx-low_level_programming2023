@@ -6,7 +6,6 @@
  *Return: 0 Always.
  */
 
-
 void print_alphabet_x10(void)
 {
 char letter;
