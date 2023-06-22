@@ -5,7 +5,8 @@
  * Loop from 0 to 9 
  * Convert the digit to a character and print it using _putchar
  * Print a new line character using _putchar 
- */
+*/
+
 void print_numbers(void)
 {
 int i;
