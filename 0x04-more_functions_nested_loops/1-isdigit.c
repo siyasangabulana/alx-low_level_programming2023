@@ -1,14 +1,15 @@
-#include <stdio.h>
+#include "main.h"
+
+/**
+ *Is a function that checks for a digit (0 through 9).
+ *
+ * Return: 1 for a char that will be a digit or 0 else.
+ */
 
 int _isdigit(int c);
-
-int main(void)
 {
-    char c;
-
-    c = '0';
-    printf("%c: %d\n", c, _isdigit(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isdigit(c));
-    return 0;
+if (c >= 48 && c <= 57)
+{
+return (1);
 }
+return (0);
