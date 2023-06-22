@@ -1,9 +1,10 @@
-#include <stdio.h>
+#include "main.h"
 
-/**
- *It prints function that multiplies two integers.
- *
- *Return 0.
+/*
+ *mul - Multiplies 2 intergers
+ *@a: The first number to be multiplied
+ *@b: The second number to be multiplied with first first number
+ *Return: The results of the multiplication between the two intergers
  */
 
 int mul(int a, int b)
