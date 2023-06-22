@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*
- *mul - Multiplies 2 intergers
+ *mul - Multiplies two intergers
  *@a: The first number to be multiplied
  *@b: The second number to be multiplied with first first number
  *Return: The results of the multiplication between the two intergers
