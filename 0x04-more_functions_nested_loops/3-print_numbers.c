@@ -5,9 +5,12 @@ include "main.h"
  * return: a number isnce 0 up to 9 
  */
 
-int main(void)
+void print_numbers(void)
 {
-    print_numbers();
-    return 0;
+int i;
+for (i = 0; i <= 9; i++)
+{
+_putchar(i + '0');
 }
-
+_putchar('\n');
+}
