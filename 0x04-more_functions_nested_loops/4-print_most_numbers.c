@@ -1,9 +1,10 @@
 #include "main.h"
 
-/*
- *this function that prints the numbers, from 0 to 9, followed by a new line.
- *Description:It does not print 2 and 4
- *Return: The number 0 up to 9
+/**
+ *print_most_numbers - Prints the numbers from 0 to 9 (excluding 2 and 4), followed by a new line.
+ *Convert the digit to a character and print it using _putchar 
+ *Print a new line character using _putchar
+ *Return: The number since 0 up to 9
  */
 
 void print_most_numbers(void)
@@ -18,4 +19,3 @@ _putchar(i + '0');
 }
 _putchar('\n');
 }
-
