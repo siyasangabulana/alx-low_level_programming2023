@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  *This program that print FizzBuzz
  *Return: 0 
@@ -28,7 +28,6 @@ else
 printf("%d ", i);
 }
 }
-
 printf("\n");
 return (0);
 }
