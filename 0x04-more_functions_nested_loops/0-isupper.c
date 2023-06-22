@@ -2,7 +2,7 @@
 
 /**
  *_isupper checks for uppercase character.
- *
+ *@ x: tp check
  *Return: 1 for upper letter or 0 for else
  */
 
