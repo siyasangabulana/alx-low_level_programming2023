@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /*
  *mul - Multiplies two intergers
  *@a: The first number to be multiplied
