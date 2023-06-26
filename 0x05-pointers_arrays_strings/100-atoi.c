@@ -22,9 +22,6 @@ i++;
 while (s[i] >= '0' && s[i] <= '9')
 {
 int digit = s[i] - '0';
-while (s[i] >= '0' && s[i] <= '9')
-{
-int digit = s[i] - '0';
 if (num > (INT_MAX / 10) || (num == (INT_MAX / 10) && digit > (INT_MAX % 10)))
 {
 if (sign == 1)
