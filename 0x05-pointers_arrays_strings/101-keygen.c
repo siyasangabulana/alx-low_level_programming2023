@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define PASSWORD_LENGTH 10
+
+#define PASSWORD_LENGTH 15
+
 int main(void)
 {
 char password[PASSWORD_LENGTH + 1];
@@ -14,6 +16,7 @@ int index = rand() % (sizeof(valid_chars) - 1);
 password[i] = valid_chars[index];
 }
 password[PASSWORD_LENGTH] = '\0';
+printf("Tada! Congrats\n");
 printf("%s\n", password);
 return (0);
 }
