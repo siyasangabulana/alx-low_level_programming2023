@@ -1,26 +1,26 @@
 #include "main.h"
 
 /**
- * rot13 - Encodes a string using ROT13 cipher.
- * @str: The string to be encoded.
+ * rot13 - Encodes a string using ROT13 cipher
+ * @s: The string to encode
  *
- * Return: A pointer to the resulting string.
+ * Return: The encoded string
  */
-char *rot13(char *str)
+
+char *rot13(char *s)
 {
-int i, j;
-char *input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char *output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-for (i = 0; str[i] != '\0'; i++)
+char *ptr = s;
+while (*ptr != '\0') 
 {
-if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z'))
+if ((*ptr >= 'a' && *ptr <= 'm') || (*ptr >= 'A' && *ptr <= 'M')) 
 {
-for (j = 0; input[j] != '\0'; j++)
+*ptr = *ptr + 13;
+} 
+else if ((*ptr >= 'n' && *ptr <= 'z') || (*ptr >= 'N' && *ptr <= 'Z')) 
 {
-if (str[i] == input[j])
-{
-str[i] = output[j];
-break;
-}}}}
-return (str);
+*ptr = *ptr - 13;
+}
+ptr++;
+}
+return (s);
 }
