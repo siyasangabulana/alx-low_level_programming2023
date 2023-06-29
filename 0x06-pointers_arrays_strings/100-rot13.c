@@ -9,18 +9,19 @@
 
 char *rot13(char *s)
 {
-char *ptr = s;
-while (*ptr != '\0') 
+int i, j;
+char *alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char *rot13 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+for (i = 0; s[i] != '\0'; i++)
 {
-if ((*ptr >= 'a' && *ptr <= 'm') || (*ptr >= 'A' && *ptr <= 'M')) 
+for (j = 0; alpha[j] != '\0'; j++)
 {
-*ptr = *ptr + 13;
-} 
-else if ((*ptr >= 'n' && *ptr <= 'z') || (*ptr >= 'N' && *ptr <= 'Z')) 
+if (s[i] == alpha[j])
 {
-*ptr = *ptr - 13;
+s[i] = rot13[j];
+break;
 }
-ptr++;
+}
 }
 return (s);
 }
