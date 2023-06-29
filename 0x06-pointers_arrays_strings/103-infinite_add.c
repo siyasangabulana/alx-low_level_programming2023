@@ -27,7 +27,8 @@ return (0);
 i = len1 - 1;
 j = len2 - 1;
 k = 0;
-while (i >= 0 || j >= 0 || carry != 0) {
+while (i >= 0 || j >= 0 || carry != 0) 
+{
 sum = carry;
 if (i >= 0)
 sum += n1[i] - '0';
@@ -40,11 +41,11 @@ j--;
 k++;
 }
 r[k] = '\0';
-for (i = 0, j = k - 1; i < j; i++, j--) {
+for (i = 0, j = k - 1; i < j; i++, j--) 
+{
 char temp = r[i];
 r[i] = r[j];
 r[j] = temp;
 }
 return (r);
 }
-
