@@ -8,14 +8,19 @@
 
 void print_number(int n)
 {
-unsigned int n1;
-n1 = n; 
-if (n < 0)
-{
-_putchar('-');
-n = -n;
-}
-if (n1 / 10 !=0)
-print_number(n1 / 10);
-_putchar((n1 % 10) + '0');
+    int divisor = 1;
+
+    if (n < 0) {
+        _putchar('-');
+        n *= -1;
+    }
+
+    while (n / divisor >= 10)
+        divisor *= 10;
+
+    while (divisor != 0) {
+        _putchar('0' + (n / divisor));
+        n %= divisor;
+        divisor /= 10;
+    }
 }
