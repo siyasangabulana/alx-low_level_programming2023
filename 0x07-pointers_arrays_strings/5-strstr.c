@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * _5-strst - check the code
+ * _5-strstr - check the code
  *@haystack: input
  *@needle: input
  *Return: Always 0.
