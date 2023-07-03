@@ -19,4 +19,3 @@ putchar(a[i][j]);
 putchar('\n');
 }
 }
-}
